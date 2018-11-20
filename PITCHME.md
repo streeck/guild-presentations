@@ -59,7 +59,7 @@ Jenkinsfile
 Makefile
 ```
 
-@[1-5]
+@[2-5]
 @[6-11]
 @[12-13]
 
@@ -108,6 +108,21 @@ requirements: venv
 
 +++
 
+### Logs
+
+```text
+log
+├── api
+│   └── uwsgi.log
+├── api_beat
+│   ├── stderr.log
+│   └── stdout.log
+└── api_worker
+    └── worker.log
+```
+
++++
+
 ### Challenges
 
 - Deployment inconsistency
@@ -119,7 +134,7 @@ requirements: venv
 @title[Proposed setup]
 ## Proposed setup
 
-+++?image=images/new_jenkins_1.png&size=auto 50%
++++?image=images/new_jenkins_1.png&size=auto 40%
 
 +++?image=images/new_jenkins_2.png&size=auto 70%
 
@@ -170,6 +185,18 @@ Makefile
 ```
 
 @[5,12,19]
+
++++
+
+### Logs
+
+```text
+log
+└── de_complete
+    ├── uwsgi.log
+    ├── worker.log
+    └── scheduler.log
+```
 
 +++
 
