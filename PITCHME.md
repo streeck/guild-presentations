@@ -14,7 +14,7 @@
 
 ## Current setup
 
-+++?image=images/jenkins_1.png&size=auto 60%
++++?image=images/jenkins_1.png&size=auto 40%
 
 +++?image=images/jenkins_2.png&size=auto 80%
 
@@ -59,28 +59,30 @@ Jenkinsfile
 Makefile
 ```
 
+@[1-5]
+@[6-11]
+@[12-13]
+
 +++
 
 ### api_worker playbook
 
 ```yaml
 - hosts: api_worker
-  become: yes
   vars_files:
     - vars/api_worker.yml
   roles:
     - {role: celery, tags: ['api_worker_daemon']}
     - {role: monit, tags: ['api_monit']}
-  tags: [api_worker]
 
 - hosts: api_beat
-  become: yes
   vars_files:
     - vars/api_beat.yml
   roles:
     - {role: celery_beat, tags: ['api_beat_daemon']}
-  tags: [api_beat]
 ```
+
+@[5,12]
 
 +++
 
@@ -140,6 +142,34 @@ ansible
 Jenkinsfile
 Makefile
 ```
+
++++
+
+### de_complete playbook
+
+```yaml
+- hosts: de_complete
+  vars_files:
+    - vars/de_complete/main.yml
+  roles:
+    - {role: deploy, tags: ['deploy']}
+    - {role: slack, tags: ['slack']}
+
+- hosts: de_complete_workers
+  vars_files:
+    - vars/de_complete/worker.yml
+  roles:
+    - {role: deploy, tags: ['worker']}
+    - {role: monit, tags: ['monit']}
+
+- hosts: de_complete_scheduler
+  vars_files:
+    - vars/de_complete/scheduler.yml
+  roles:
+    - {role: deploy, tags: ['scheduler']}
+```
+
+@[5,12,19]
 
 +++
 
