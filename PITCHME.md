@@ -14,13 +14,15 @@
 
 ## Current setup
 
-+++?image=images/jenkins_1.png&size=auto 80%
++++?image=images/jenkins_1.png&size=auto 60%
 
 +++?image=images/jenkins_2.png&size=auto 80%
 
 +++
 
-```shell
+### Shell build step
+
+```sh
 virtualenv-2.7 venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -38,6 +40,8 @@ ansible-playbook -v --inventory-file=$INVENTORY_FILE ansible/api_worker.yml --li
 
 
 +++
+
+### Devops repo
 
 ```text
 ansible
@@ -82,7 +86,7 @@ Makefile
 
 ### Jenkinsfile
 
-```shell
+```sh
 ./bin/inventories_to_mgt.sh
 make requirements
 ```
@@ -113,13 +117,15 @@ requirements: venv
 @title[Proposed setup]
 ## Proposed setup
 
-+++?image=images/new_jenkins_1.png&size=auto 80%
++++?image=images/new_jenkins_1.png&size=auto 50%
 
-+++?image=images/new_jenkins_2.png&size=auto 80%
++++?image=images/new_jenkins_2.png&size=auto 70%
 
-+++?image=images/new_jenkins_3.png&size=auto 80%
++++?image=images/new_jenkins_3.png&size=auto 60%
 
 +++
+
+### Devops repo
 
 ```text
 ansible

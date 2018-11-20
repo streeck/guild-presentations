@@ -1,0 +1,149 @@
+.reveal section img {
+  border: 0;
+  box-shadow: none;
+}
+
+.reveal .big-formula {
+    font-size: 0.6em;
+}
+
+/* Boilerplate code copied from:
+https://github.com/gitpitch/templates/blob/white/assets/css/PITCHME.css */
+body {
+  background: #fff;
+  background-color: #fff;
+}
+
+html:-webkit-full-screen-ancestor {
+  background: #fff;
+  background-color: #fff;
+}
+
+html:-moz-full-screen-ancestor {
+  background: #fff;
+  background-color: #fff;
+}
+
+.reveal pre {
+  width: 100%;
+  box-shadow : none;
+}
+
+
+.reveal pre code {
+  font-size: 1.2em;
+  line-height: 1.2;
+  max-height: 50vh !important;
+  border-radius: 10px;
+}
+
+.reveal .slides section .code-presenting-annotation {
+  color: white;
+  background: #1f1c18;
+  padding: 1px 15px;
+  border-radius: 15px;
+  opacity: 0.75 !important;
+  font-size: 50% !important;
+}
+
+.reveal p span.slide-title {
+  color: black;
+  padding: 4px 15px;
+  opacity: 0.75 !important;
+  border-radius: 15px;
+}
+
+.reveal a.pro-link {
+    font-size: 0.5em;
+}
+
+.reveal a {
+    color: #e7ad52;
+}
+
+.reveal a:hover {
+    color: #f3d7ac;
+}
+
+.hljs {
+  background : none;
+}
+
+.white {
+  color: white;
+}
+
+#gp-logo img {
+  max-height: 4em;
+  max-width: none;
+}
+
+.gp-tip { font-size : 1.5em; }
+
+.gp-contact { font-size : 1.4em; }
+
+.gp-download { margin-left: 10px; }
+
+/* General Styling */
+.text-black  { color: #000000 !important; }
+.text-blue   { color: #4487F2 !important; }
+.text-gray   { color: #777777 !important; }
+.text-green  { color: #8EA33B !important; }
+.text-orange { color: #F26225 !important; }
+.text-pink   { color: #E71E60 !important; }
+.text-purple { color: #643B85 !important; }
+.text-yellow { color: #F5DB2E !important; }
+.text-white  { color: #FFFFFF !important; }
+.text-blue-elements { color: #1e8dcf !important; }
+
+.span-5  { width:  5% }
+.span-10 { width: 10% }
+.span-15 { width: 15% }
+.span-20 { width: 20% }
+.span-25 { width: 25% }
+.span-30 { width: 30% }
+.span-35 { width: 35% }
+.span-40 { width: 40% }
+.span-45 { width: 45% }
+.span-50 { width: 50% }
+.span-55 { width: 55% }
+.span-60 { width: 60% }
+.span-65 { width: 65% }
+.span-70 { width: 70% }
+.span-75 { width: 75% }
+.span-80 { width: 80% }
+.span-85 { width: 85% }
+.span-90 { width: 90% }
+.span-95 { width: 95% }
+.span-100 { width: 100% }
+
+.height-0  { height: 0% }
+.height-5  { height:  5% }
+.height-10 { height: 10% }
+.height-15 { height: 15% }
+.height-20 { height: 20% }
+.height-25 { height: 25% }
+.height-30 { height: 30% }
+.height-35 { height: 35% }
+.height-40 { height: 40% }
+.height-45 { height: 45% }
+.height-50 { height: 50% }
+.height-55 { height: 55% }
+.height-60 { height: 60% }
+.height-65 { height: 65% }
+.height-70 { height: 70% }
+.height-75 { height: 75% }
+.height-80 { height: 80% }
+.height-85 { height: 85% }
+.height-90 { height: 90% }
+.height-95 { height: 95% }
+.height-100 { height: 100% }
+
+.center-text { text-align: center }
+
+/* Split-screen styling */
+.split-screen-heading {
+  font-size: 1.7em !important;
+  font-weight: bold !important;
+  text-align: center;
+}
