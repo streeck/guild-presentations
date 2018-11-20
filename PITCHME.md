@@ -134,7 +134,7 @@ log
 @title[Proposed setup]
 ## Proposed setup
 
-+++?image=images/new_jenkins_1.png&size=auto 40%
++++?image=images/new_jenkins_1.png&size=auto 30%
 
 +++?image=images/new_jenkins_2.png&size=auto 70%
 
