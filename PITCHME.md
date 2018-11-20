@@ -121,6 +121,9 @@ log
     └── worker.log
 ```
 
+@[2,4,7]
+@[5-6]
+
 +++
 
 ### Challenges
@@ -157,6 +160,10 @@ ansible
 Jenkinsfile
 Makefile
 ```
+
+@[2-3]
+@[4-8]
+@[9]
 
 +++
 
@@ -197,6 +204,7 @@ log
     ├── worker.log
     └── scheduler.log
 ```
+@[2-5]
 
 +++
 
