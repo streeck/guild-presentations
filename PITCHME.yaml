@@ -1,0 +1,6 @@
+mathjax : TeX-MML-AM_HTMLorMML-full
+theme-override : PITCHME.css
+
+code-line-numbers : true
+
+footnote : "Updated Celery Setup"
